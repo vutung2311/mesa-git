@@ -1,5 +1,8 @@
 mesa-git-*
+venus-protocol-*
 mesa
 pkg
 src
 
+# dependencies
+*.tar.gz
