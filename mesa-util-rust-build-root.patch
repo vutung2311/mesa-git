@@ -1,0 +1,16 @@
+diff --git a/src/util/rust/meson.build b/src/util/rust/meson.build
+index 195f9a36e1b..3adfefb826d 100644
+--- a/src/util/rust/meson.build
++++ b/src/util/rust/meson.build
+@@ -54,7 +54,10 @@ _util_rust_bindgen = rust.bindgen(
+ libutil_rust_bindgen_c = static_library(
+   'util_rust_bindgen_c',
+   _util_rust_bindgen[1],
+-  include_directories : inc_util,
++  include_directories : [
++    inc_util,
++    fs.relative_to(meson.project_build_root(), meson.current_source_dir()),
++  ],
+   dependencies : [
+     idep_mesautil.partial_dependency(compile_args : true, includes : true,
+                                      sources : true),

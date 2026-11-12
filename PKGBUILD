@@ -12,7 +12,7 @@
 
 pkgname=mesa-git
 pkgdesc="an open-source implementation of the OpenGL specification, git version"
-pkgver=27.0.0_devel.232497.03054bc2ed4.d41d8cd
+pkgver=27.0.0_devel.233688.ff141fd70b6.f88b8c1
 pkgrel=1
 arch=('x86_64')
 makedepends=(
@@ -100,10 +100,12 @@ source=(
     'mesa::git+https://gitlab.freedesktop.org/mesa/mesa.git#branch=main'
     'LICENSE'
     "venus-protocol-1.1.3::git+https://gitlab.freedesktop.org/virgl/venus-protocol.git#tag=v1.1.3"
+    'mesa-util-rust-build-root.patch'
 )
 sha256sums=('SKIP'
             '7fdc119cf53c8ca65396ea73f6d10af641ba41ea1dd2bd44a824726e01c8b3f2'
             'SKIP'
+            'eaf5e00406532bb6ac621d742c338784a145e1e6c283d2bd762815595fb34d0a'
             '357703d41365b4b27c590e3ed91eabb1b663f07c4c084095e60cbed4362dff0d'
             '5e719e8df665df0d1c8fbfd238015744736151d4445ec0836b8e628aae103b77'
             '3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b'
@@ -113,6 +115,7 @@ sha256sums=('SKIP'
 b2sums=('SKIP'
         'cc60238726b35133b5b729fb4ed1e76e04136588533615d84b4a54656d5b41727d5e7ff06ef4de3eb102eed6669d6c5c5cb8ac9fbdf6fc25aa477877c5c3ba87'
         'SKIP'
+        '90859aab018b017d0d2cefe7675959621210ecf2249ccf1f343edfd963f35b8ddf39edb5780fef9d54e623d0e67730f6819743202fbe21720d05126132005071'
         '7a1b3b82bbbf6a123512815c3e8f068a17890cbbb8b68e88a5a492f62469942fadd776207eebd913052a1c06e1fd37a549e86526b9fc8f08b9ca7cb0044ac16b'
         '4b89e07f23af8328dbb34fe2b3f1b202f1e6a3885a6269740a23359b41bb4099ac2484565d3b2b0936261689ca525785ac620c766997234fd8d0f409e80e5ea3'
         '4cede03c08758ccd6bf53a0d0057d7542dfdd0c93d342e89f3b90460be85518a9fd24958d8b1da2b5a09b5ddbee8a4263982194158e171c2bba3e394d88d6dac'
